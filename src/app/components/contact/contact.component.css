@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#contactform {
+  margin-top: 20vh !important;
+  margin: 0 auto;
+}
+
+.container .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+  width: 30vh;
+}
+
+* {
+  width: 50vh !important;
+  background: #f7ebeb26 !important;
+}

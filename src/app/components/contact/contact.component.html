@@ -1,0 +1,24 @@
+<div id="contactform" style="text-align: center; ">
+<h2 style="text-align: center;">{{title}}</h2>
+  <p>
+    <mat-form-field appearance="fill">
+      <mat-label>Type your name</mat-label>
+      <input matInput placeholder="Your name" required>
+      <mat-hint>Please type your name here</mat-hint>
+    </mat-form-field>
+  </p>
+
+  <div>
+    <mat-form-field appearance="fill">
+      <mat-label>Type your email</mat-label>
+      <input matInput placeholder="your@email.com" [formControl]="email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+  </div>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Type your message</mat-label>
+    <textarea matInput></textarea>
+  </mat-form-field>
+{{text}}
+</div>

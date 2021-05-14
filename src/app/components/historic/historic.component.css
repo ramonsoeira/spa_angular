@@ -1,0 +1,48 @@
+.historic {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -11px;
+}
+.historic-image {
+  width: 50%;
+  height: 100vh;
+  background-image: url("https://live.staticflickr.com/3948/33235516812_8614c988dd_b.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.historic-txt {
+  color: white;
+  background-color: #fd7701;
+  padding-top: 8%;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  font-size: 2vh;
+  text-align: justify;
+  width: 50%;
+  height: 100vh;
+  font-weight: 200;
+  line-height: 1.6;
+}
+
+@media only screen and (max-width: 600px) {
+  .historic {
+    flex-wrap: wrap;
+  }
+
+  .historic-txt {
+    color: white;
+    background-color: #fd7701;
+    font-size: 1.5vh;
+    width: 100%;
+    height: 100vh;
+  }
+
+  .historic-image {
+    display: none;
+  }
+}
